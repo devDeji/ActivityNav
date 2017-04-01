@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "482789595400",
+    "firebase_url": "https://middlesex-application.firebaseio.com",
+    "project_id": "middlesex-application",
+    "storage_bucket": "middlesex-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482789595400:android:94e7aeefdd00b6ef",
+        "android_client_info": {
+          "package_name": "com.example.ayodeji.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482789595400-01c828e89bdqati1spom0ggmq78ui8jt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ayodeji.myapplication",
+            "certificate_hash": "69f8b7d97ddd1038f246eeb2b3637517ea520b94"
+          }
+        },
+        {
+          "client_id": "482789595400-i64n4o11vdti89gutqh58kceee4p8vpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvhG85XxZoKmGNme35PYl9z9rIzqFBg0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482789595400-i64n4o11vdti89gutqh58kceee4p8vpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

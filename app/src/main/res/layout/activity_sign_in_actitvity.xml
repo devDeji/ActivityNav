@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayodeji.myapplication.SignInActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sign_in_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <ImageView
+            android:id="@+id/LogoOnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top"
+            android:contentDescription="Application Logo"
+            android:gravity="top"
+            android:keepScreenOn="true"
+            android:src="@drawable/middlogo" />
+
+        <RelativeLayout
+            android:id="@+id/rellogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LogoOnSignIn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/email_password_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Or" />
+
+                    <EditText
+                        android:id="@+id/field_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/field_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Passowrd"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_password_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_password_fields"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/email_sign_in_button"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorMiddlesexRed"
+                        android:text="Sign In"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/email_create_account_button"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorMiddlesexRed"
+                        android:text="Create Account"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

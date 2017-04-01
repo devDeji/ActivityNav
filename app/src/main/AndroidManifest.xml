@@ -16,11 +16,7 @@
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             <!-- Intent to add search dialog not search view to corresponding activity -->
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -41,10 +37,25 @@
 
         <provider
             android:name=".MySuggestionProvider"
-            android:authorities="com.example.ayodeji.myapplication.MySuggestionProvider" />
+            android:authorities="com.example.ayodeji.myapplication.MySuggestionProvider"
+            android:exported="false" />
+
         <activity android:name=".Main2Activity">
+
             <!-- Intent to add search dialog not search view to corresponding activity -->
         </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>
